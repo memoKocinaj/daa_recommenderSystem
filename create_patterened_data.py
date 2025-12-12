@@ -35,7 +35,7 @@ def create_user_clusters_data():
     return df
 
 def create_item_categories_data():
-    ndom.seed(43)
+    np.random.seed(43)
     
     categories = {
         'action': ['I1', 'I2', 'I3', 'I4', 'I5'],
@@ -298,4 +298,5 @@ def run_comparison():
     return True
 
 if __name__ == "__main__":
+
     run_comparison()
